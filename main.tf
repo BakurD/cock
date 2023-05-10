@@ -1,4 +1,4 @@
-provider "{{cookiecutter.aws_provider_region|lower}}" {} 
+provider "{{cookiecutter.provider_name}}" {} 
 
 module "Infrastructure" {
   source = "./infrastructure"
