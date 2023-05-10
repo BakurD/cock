@@ -1,1 +1,0 @@
-"source": "{% if cookiecutter.provider_name == 'aws' %}./infrastructure{% elif cookiecutter.provider_name == 'ah' %}./infra_ah{% elif cookiecutter.provider_name == 'alicloud' %}./infra_alicloud{% endif %}"
