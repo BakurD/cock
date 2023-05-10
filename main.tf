@@ -1,7 +1,7 @@
-provider "{{cookiecutter.provider_name}}" {} 
+provider "{{cookiecutter.provider_name}}" {}
 
 module "Infrastructure" {
-  source = "./infrastructure"
+  source = "{{cookiecutter.source}}"
   vpc_cidr_block = "10.0.0.0/16"
   public_subnet_cidr = [
     "10.0.11.0/24",
