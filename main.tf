@@ -1,4 +1,4 @@
-provider {{cookiecutter.provider_name}} {} 
+provider "{{cookiecutter.provider_name}}" {} 
 
 module "Infrastructure" {
   source = "./infrastructure"
@@ -8,7 +8,7 @@ module "Infrastructure" {
     "10.0.21.0/24"
   ]
   private_subnet = "10.0.12.0/24"
-  min_size = {{cookiecutter.min_size}}
-  max_size = {{cookiecutter.max_size}}
+  min_size = "{{cookiecutter.min_size}}"
+  max_size = "{{cookiecutter.max_size}}"
   min_elb = "5"
 }
