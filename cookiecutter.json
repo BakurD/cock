@@ -1,0 +1,10 @@
+{
+    "provider_name": ["aws", "ah", "alicloud"],
+    "max_size": "{% if cookiecutter.provider_name == 'aws' %}5{% elif cookiecutter.provider_name == 'ah' %}3{% elif cookiecutter.provider_name == 'alicloud' %}10{% endif %}",
+<<<<<<< HEAD
+    "min_size": "{% if cookiecutter.provider_name == 'aws' %}3{% elif cookiecutter.provider_name == 'ah' %}2{% elif cookiecutter.provider_name == 'alicloud' %}8{% endif %}"
+=======
+    "min_size": "{% if cookiecutter.provider_name == 'aws' %}3{% elif cookiecutter.provider_name == 'ah' %}2{% elif cookiecutter.provider_name == 'alicloud' %}8{% endif %}",
+    "source": "{% if cookiecutter.provider_name == 'aws' %}./infrastructure{% elif cookiecutter.provider_name == 'ah' %}./infra_ah{% elif cookiecutter.provider_name == 'alicloud' %}./infra_alicloud{% endif %}"
+>>>>>>> 5c0f3fc (fixedpdsdasd)
+}
