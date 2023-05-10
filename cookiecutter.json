@@ -1,4 +1,5 @@
 {
+    "project_name": "bakur",
     "provider_name": ["aws", "ah", "alicloud"],
     "max_size": "{% if cookiecutter.provider_name == 'aws' %}5{% elif cookiecutter.provider_name == 'ah' %}3{% elif cookiecutter.provider_name == 'alicloud' %}10{% endif %}",
     "min_size": "{% if cookiecutter.provider_name == 'aws' %}3{% elif cookiecutter.provider_name == 'ah' %}2{% elif cookiecutter.provider_name == 'alicloud' %}8{% endif %}",

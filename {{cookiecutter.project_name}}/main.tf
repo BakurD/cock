@@ -1,4 +1,4 @@
-provider {{cookiecutter.provider_name}} {}
+provider "{{cookiecutter.provider_name}}" {}
 
 module "Infrastructure" {
   source = "{{cookiecutter.source}}"
